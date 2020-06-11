@@ -1,0 +1,107 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import "~vue-snotify/styles/material";
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+select.minimal {
+  background-image:
+  linear-gradient(45deg, transparent 50%, #17a2b8 50%),
+  linear-gradient(135deg, #17a2b8 50%, transparent 50%),
+  linear-gradient(to right, #17a2b8, #17a2b8) !important;
+  background-position:
+  calc(100% - 20px) calc(1em + 2px),
+  calc(100% - 15px) calc(1em + 2px),
+  calc(100% - 2.5em) 0.5em;
+  background-size:
+  5px 5px,
+  5px 5px,
+  1px 1.5em;
+  background-repeat: no-repeat;
+  margin-left: 0px !important;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  text-decoration: none;
+}
+
+select.minimal:focus {
+  background-image:
+  linear-gradient(45deg, #17a2b8 50%, transparent 50%),
+  linear-gradient(135deg, transparent 50%, #17a2b8 50%),
+  linear-gradient(to right, #17a2b8, #17a2b8) !important;
+  background-position:
+  calc(100% - 15px) 1em,
+  calc(100% - 20px) 1em,
+  calc(100% - 2.5em) 0.5em;
+  background-size:
+  5px 5px,
+  5px 5px,
+  1px 1.5em;
+  background-repeat: no-repeat;
+  border: 1px solid #17a2b8;
+  border-bottom: 1px solid #17a2b8 !important;
+  outline: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  text-decoration: none;
+}
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #17a2b8;
+}
+
+//media vuetable
+@media only screen and (max-width: 413px) and (min-width: 5px)  { 
+	.media-query-consultar{
+		width: 290px !important;
+	}
+}
+
+@media only screen and (max-width: 500px) and (min-width: 414px) { 
+	.media-query-consultar{
+		width: 320px !important;
+	}
+}
+
+@media only screen and (max-width: 820px) and (min-width: 621px) {  
+	.media-query-consultar{
+		width: 430px !important;
+	}
+}
+
+.style-img{
+  height: 50px !important;
+  width: 50px !important;
+}
+
+.zoom{
+  /* Aumentamos la anchura y altura durante 2 segundos */
+  transition: width 2s, height 2s, transform 2s !important;
+  -moz-transition: width 2s, height 2s, -moz-transform 2s !important;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s !important;
+  -o-transition: width 2s, height 2s,-o-transform 2s !important;
+}
+
+.zoom:hover{
+  /* tranformamos el elemento al pasar el mouse por encima al doble de
+  su tamaño con scale(2). */
+  transform : scale(2) !important;
+  -moz-transform : scale(2) !important;      /* Firefox */
+  -webkit-transform : scale(2) !important;   /* Chrome - Safari */
+  -o-transform : scale(2) !important;        /* Opera */
+}
