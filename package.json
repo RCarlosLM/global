@@ -28,7 +28,7 @@
         "babel-loader": "^8.0.6",
         "datatables": "^1.10.18",
         "luxon": "^1.21.3",
-        "moment": "^2.24.0",
+        "moment": "^2.29.2",
         "quagga": "^0.12.1",
         "vee-validate": "^2.2.8",
         "vue-cam-vision": "0.0.8",
