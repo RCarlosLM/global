@@ -27,7 +27,7 @@
         "@babel/core": "^7.4.5",
         "babel-loader": "^8.0.6",
         "datatables": "^1.10.18",
-        "luxon": "^1.21.3",
+        "luxon": "^2.5.2",
         "moment": "^2.24.0",
         "quagga": "^0.12.1",
         "vee-validate": "^2.2.8",
